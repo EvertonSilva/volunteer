@@ -8,10 +8,10 @@ Step by step do fluxo de trabalho:
 * Create a new Pull Request
 
 
-Para manter nossas pull request organizadas, vamos adotar as seguintes nomeclaturas em nosso commits:
+Para manter nossas pull request organizadas, vamos adotar as seguintes nomeclaturas em nossos commits:
 
-* para novas featues --> git commit -m "feat/nome-da-feature"
-* para correçao de bugs --> git commit -m "bug/correcao-do-bug"
+* para novas features --> git commit -m "feat/nome-da-feature"
+* para correçao de bugs --> git commit -m "fix/correcao-do-bug"
 * para outras coisas --> git commit -m "chore/nome-da-chore"
 
 * ...
