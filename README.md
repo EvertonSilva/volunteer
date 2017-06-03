@@ -2,10 +2,10 @@
 
 Step by step do fluxo de trabalho:
 
-Create your feature branch (git checkout -b my-new-feature)
-Commit your changes (git commit -am 'Feat/Add some feature')
-Push to the branch (git push origin my-new-feature)
-Create a new Pull Request
+* Create your feature branch (git checkout -b my-new-feature)
+* Commit your changes (git commit -am 'Feat/Add some feature')
+* Push to the branch (git push origin my-new-feature)
+* Create a new Pull Request
 
 
 Para manter nossas pull request organizadas, vamos adotar as seguintes nomeclaturas em nosso commits:
