@@ -1,17 +1,24 @@
-# README
+# Volunteer
 
-Step by step do fluxo de trabalho:
+_git clone ..._
 
-* Create your feature branch (git checkout -b my-new-feature)
-* Commit your changes (git commit -am 'Feat/Add some feature')
-* Push to the branch (git push origin my-new-feature)
-* Create a new Pull Request
+_git add upstream ..._
+
+_..._
 
 
-Para manter nossas pull request organizadas, vamos adotar as seguintes nomeclaturas em nossos commits:
+## Basic commands
+- Clone the repo
+- in folder project run command ```docker-compose build``` to create all necessary
+ components
+- after command run ```docker-compose up``` to cache gems, create database and 
+initialize server
 
-* para novas features --> git commit -m "feat/nome-da-feature"
-* para correçao de bugs --> git commit -m "fix/correcao-do-bug"
-* para outras coisas --> git commit -m "chore/nome-da-chore"
+### if you need to enter in container
+run command ```docker-compose run --rm app```
 
-* ...
+## if you need to use rails console
+run command ```docker-compose run --rm app bundle exec rails c```
+
+### if you need run another command
+_you should have use complete path like ```... bundle exec ...```_ 
