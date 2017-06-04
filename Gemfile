@@ -17,6 +17,26 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+#front-end
+gem 'materialize-sass'
+gem 'material_icons'
+
+#authentication
+gem 'devise'
+gem 'omniauth', '~> 1.6', '>= 1.6.1'
+gem 'omniauth-facebook', '~> 4.0'
+
+#authorization
+gem 'cancancan', '~> 1.10'
+
+#pagination
+gem 'will_paginate', '~> 3.1.0'
+
+#management files
+gem 'cloudinary', '~> 1.8', '>= 1.8.1'
+gem 'carrierwave', '~> 1.0'
+
+
 group :test do
   gem 'factory_girl_rails'
   gem 'ffaker'
