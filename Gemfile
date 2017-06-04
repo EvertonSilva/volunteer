@@ -17,6 +17,26 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+#front-end
+gem 'materialize-sass'
+gem 'material_icons'
+
+#authentication
+gem 'devise'
+gem 'omniauth', '~> 1.6', '>= 1.6.1'
+gem 'omniauth-facebook', '~> 4.0'
+
+#authorization
+gem 'cancancan', '~> 1.10'
+
+#pagination
+gem 'will_paginate', '~> 3.1.0'
+
+#management files
+gem 'cloudinary', '~> 1.8', '>= 1.8.1'
+gem 'carrierwave', '~> 1.0'
+
+
 group :test do
   gem 'factory_girl_rails'
   gem 'ffaker'
@@ -26,6 +46,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.5'
   gem 'capybara', '~> 2.13.0'
+  gem 'database_cleaner', '~> 1.6', '>= 1.6.1'
   gem 'selenium-webdriver'
 end
 
