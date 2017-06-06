@@ -3,8 +3,7 @@ class CreateEstados < ActiveRecord::Migration[5.0]
     create_table :estados do |t|
       t.string :sigla
       t.string :nome, null: false
-      t.integer :capital_id, null: false
-
+      t.integer :capital_id
       t.timestamps
     end
 
