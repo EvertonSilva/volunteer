@@ -25,11 +25,10 @@ ActiveRecord::Schema.define(version: 20170604200200) do
 
   create_table "estados", force: :cascade do |t|
     t.string   "sigla"
-    t.string   "nome"
+    t.string   "nome",       null: false
     t.integer  "capital_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["capital_id"], name: "index_estados_on_capital_id", using: :btree
   end
 
 end
