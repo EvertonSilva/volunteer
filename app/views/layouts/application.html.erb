@@ -19,6 +19,11 @@
           <div class="container">
             <a href="<% link_to 'home', root_path %>" class="brand-logo">Logo</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <%- if devise_mapping.omniauthable? %>
+                <%- resource_class.omniauth_providers.each do |provider| %>
+                  <li><%= link_to "Logar com #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %></li>
+                <% end -%>
+              <% end -%>
               <li><%= link_to("Sign in", new_user_session_path) %></li>
             </ul>
           </div>
