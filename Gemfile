@@ -15,10 +15,11 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'redis', '~> 3.3', '>= 3.3.3'
 
 #front-end
-gem 'materialize-sass'
-gem 'material_icons'
+gem 'materialize-sass', '~> 0.98.2'
+gem 'material_icons', '~> 2.2', '>= 2.2.1'
 
 #authentication
 gem 'devise', '~> 4.2'
