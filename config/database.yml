@@ -5,6 +5,8 @@ default: &default
   host: postgres
   user: postgres
 
+
+
 development:
   <<: *default
   database: volunteer_development
