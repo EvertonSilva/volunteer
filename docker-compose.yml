@@ -23,7 +23,7 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - '.:/app'
+      - '.:/volunteer'
     volumes_from:
     - box
 
