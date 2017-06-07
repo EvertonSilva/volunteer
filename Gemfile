@@ -47,6 +47,8 @@ group :development, :test do
   gem 'capybara', '~> 2.13.0'
   gem 'database_cleaner', '~> 1.6', '>= 1.6.1'
   gem 'selenium-webdriver'
+  # for environment variables
+  gem 'dotenv', '~> 2.2', '>= 2.2.1'
 end
 
 group :development do
@@ -56,4 +58,5 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+gem 'activerecord-session_store', '~> 1.1'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
