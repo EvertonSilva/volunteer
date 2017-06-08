@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Volunteer - Aproximando voluntários de instituições</title>
+    <title><%= @site_name %> - <%= @site_description %></title>
     <%= csrf_meta_tags %>
     <%= favicon_link_tag "favicon-32x32.png" %>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
   <body>
     <header>
-      <nav>
+      <nav class="green lighten-1">
         <div class="nav-wrapper">
           <div class="container">
-            <a href="<% link_to 'home', root_path %>" class="brand-logo">Logo</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <%#- if devise_mapping.omniauthable? %>
-                <%#- resource_class.omniauth_providers.each do |provider| %>
-                  <li><%#= link_to "Logar com #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %></li>
-                <%# end -%>
-              <%# end -%>
+            <a href="<%= root_path %>" class="brand-logo"><%= @site_name %></a>
+            <ul id="nav-mobile" class="right">
               <li><%= link_to("Sign in", new_user_session_path) %></li>
             </ul>
           </div>
@@ -38,28 +33,19 @@
       <%= yield %>
     </div>
 
-    <footer class="page-footer">
+    <footer class="page-footer green lighten-1">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-            </ul>
+            <h5 class="white-text"><%= @site_name %></h5>
+            <p class="grey-text text-lighten-4">Uma uniciativa onebitcode.com.br</p>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
         <div class="container">
-          © 2014 Copyright Text
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          © <%= Time.now.strftime("%Y")  %> Copyright <% @sitename %> & <a class="grey-text text-lighten-4" href="#">onebitcode.com.br</a>
+          <%= link_to "Sign in", new_user_session_path, class: "grey-text text-lighten-4 right" %></a>
         </div>
       </div>
     </footer>
