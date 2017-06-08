@@ -8,6 +8,7 @@
 #   inflect.singular /^(ox)en/i, '\1'
 #   inflect.uncountable %w( fish sheep )
     inflect.irregular 'job_tag', 'jobs_tags'
+    inflect.irregular 'job_profile', 'jobs_profiles'
  end
 
 # These inflection rules are supported but not enabled by default:
